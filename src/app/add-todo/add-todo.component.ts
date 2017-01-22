@@ -10,14 +10,12 @@ import { TodoStatus } from "../todo-status.enum";
 export class AddTodoComponent {
   @Output() addTodo = new EventEmitter<Todo>();
   todo: Todo;
-  @ViewChild('ref') public ref: any;
 
   constructor() {
     this.setInitial();
   }
 
   public add(): void {
-    console.log(this.ref);
     const { name, status } = this.todo;
 
     if(name.length > 0) {
