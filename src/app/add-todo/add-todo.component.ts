@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, ViewChild, ContentChild } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Todo } from "../todo";
 import { TodoStatus } from "../todo-status.enum";
 
